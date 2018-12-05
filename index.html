@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="container-fluid px-0">
-    <nav class="navbar bg-primary navbar-light navbar-expand-sm">
+    <nav class="navbar bg-primary navbar-light navbar-expand-md">
       <a class="navbar-brand" href="#">
         <img class="align-top" src="homeicon.png" width="30px">MyWebpage
       </a>
@@ -36,6 +36,58 @@
         </button>
       </div>
     </nav>
+  </div>
+
+  <div class="container-fluid">
+    <form class="d-table mx-auto my-5">
+      <div class="form-group row">
+        <div class="col-auto col-sm-12">
+          <input type="text" name="name" class="form-control" placeholder="Nome Completo" id="name">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-auto">
+          <input type="email" name="email" class="form-control" id="emailTf" placeholder="Email Válido">
+        </div>
+        <div class="col-auto mt-3 mt-sm-0 pl-sm-1">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">@</div>
+            </div>
+            <select class="form-control">
+              <option value="@gmail.com">gmail.com</option>
+              <option value="@outlook.com">outlook.com</option>
+              <option value="@live.com">live.com</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-auto">
+          <input type="password" name="password" class="form-control" id="password" placeholder="Senha">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-auto">
+          <input type="password" name="confPassword" class="form-control" id="confPassword" placeholder="Confirmar Senha">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-auto">          
+          <div class="form-check form-check-inline">
+            <input type="checkbox" name="agree" class="form-check-input" value="agreed" id="agree">
+            <label class="form-check-label" for="agree">Concordo com os <a href="#">termos</a>.</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-auto">
+          <button class="btn btn-primary">
+            <span>Enviar</span>
+          </button>
+        </div>
+      </div>
+    </form>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
